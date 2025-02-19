@@ -1,0 +1,50 @@
+.App {
+  background: radial-gradient(circle, #00ff0d, #0072ff);
+  height: 100vh; /* Ocupa 100% da altura da tela */
+  width: 100vw;  /* Ocupa 100% da largura da tela */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: "hidden"
+}
+
+/* Ajustes para dispositivos móveis */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .background-image {
+    max-width: 100vw;
+    max-height: 60vh;
+  }
+
+  .github-container {
+    padding-top: 60px;
+  }
+
+  .image-container {
+    margin-bottom: 20px;
+  }
+
+  .fa-chevron-left, .fa-chevron-right {
+    font-size: 30px; /* Reduz o tamanho das setas em telas pequenas */
+  }
+}
+
+/* Ajustes para dispositivos grandes (desktop) */
+@media (min-width: 1024px) {
+  .App {
+    padding: 30px;
+  }
+
+  .background-image {
+    max-width: 90vw;
+    max-height: 90vh;
+  }
+
+  .fa-chevron-left, .fa-chevron-right {
+    font-size: 40px; /* Setas maiores em telas grandes */
+  }
+}
+
